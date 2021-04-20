@@ -1,0 +1,168 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer {
+  border: 1px solid rgb(7, 9, 95);
+  background-image: linear-gradient(260deg, #3e8cc1 0%, #880e8a 100%);
+  margin-top: auto;
+}
+
+.main {
+  display: flex;
+
+  padding: 35px;
+}
+
+.main div {
+  padding: 10px;
+}
+
+.box-1 {
+  flex: 1;
+}
+
+.box-2 {
+  flex: 3;
+}
+
+.box-3 {
+  flex: 1;
+}
+
+.kamausag-nemioused {
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #3e8cc1 0%, #880e8a 100%);
+  border: 1px solid rgba(19, 18, 18, 0.17);
+  padding-bottom: 20px;
+  padding: 5px 0px 21px 0px;
+  margin: 0px;
+}
+
+.kilaimscen_demoslonad {
+  list-style-type: none;
+  display: none;
+}
+
+.kiascestag-dendoev, .konvugen {
+  text-decoration: none;
+  color: rgba(252, 253, 249, 0.84);
+  text-shadow: 0 1px 0 #383535;
+  margin: 0px;
+  padding: 5px 0px 0px 0px;
+}
+
+.kilaimscen_demoslonad li {
+  text-align: center;
+  margin: 14px auto;
+}
+
+.konvugen {
+  display: inline-block;
+  font-size: 23px;
+  margin-top: 10px;
+  margin-left: 18px;
+}
+
+.abensera-ncoevstou {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  cursor: pointer;
+  color: rgb(253, 253, 253);
+  font-size: 25px;
+}
+
+@media screen and (min-width: 860px) {
+  .kamausag-nemioused {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 80px;
+    align-items: center;
+    padding: 15px 0px 20px 10px;
+  }
+   
+
+  .kilaimscen_demoslonad {
+    display: flex;
+    margin-right: 37px;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .kilaimscen_demoslonad li {
+    margin: 3px;
+  }
+
+  .kiascestag-dendoev {
+    margin-left: 38px;
+    padding: 10px 0px;
+  }
+
+  .konvugen {
+    padding: 5px 0px 20px 10px;
+  }
+
+  .abensera-ncoevstou {
+    display: none;
+  }
+
+  .konvugen:hover {
+    text-shadow:0px 0px 18px #c7effb;
+  }  
+   
+  .kiascestag-dendoev:hover {
+    color: rgb(247, 245, 245);
+    margin-top: 8px;
+    color: rgb(234, 234, 234);  
+    text-shadow: 0 0 1px #fdf7f7;  
+    transition: 0.5s;  
+    box-shadow: 0px 2px 0px 0px rgba(251, 251, 251, 0.79);  
+    text-shadow: 0 1px 0 #403e3e;  
+  }
+
+  a.button11 {
+    position: relative;
+    z-index: 1;
+    color: black;
+    font-size: 100%;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  a.button11:after {
+    content: "Купить";
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    width: calc(100% + 6*(1em*90/135) - 2px*2*2);
+    text-align: right;
+    color: #fff;
+    font-size: 90%;
+    padding: .25em .5em;
+    border-radius: 5px;
+    border: 2px solid #c61e40;
+    -webkit-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    background: linear-gradient(#d4536d, #c61e40) no-repeat 100% 0;
+    background-size: calc(6*(1em*90/135) + .5em) 100%;
+    box-shadow: inset calc(-6*(1em*90/135) - .5em) 0 rgba(255,255,255,0);
+    transition: .3s;
+  }
+
+  a.button11:hover:after {
+    box-shadow: inset calc(-6*(1em*90/135) - .5em) 0 rgba(255,255,255,.2);
+  }
+
+  a.button11:active:after {
+    background-image: linear-gradient(260deg, #3e8cc1 0%, #880e8a 100%);
+  }
+}
